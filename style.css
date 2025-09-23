@@ -15,6 +15,17 @@
     font-family: 'medium';
     src: url(font/TTNorms-Medium.woff2);
 }
+@font-face {
+    font-family: 'font1';
+    src: url(font/extrabold.woff2);
+}
+@font-face {
+    font-family: 'font2';
+    src: url(font/doublebold.woff2);
+}
+.main{
+    position: relative;
+}
 .header_main{
     margin-top: 16px;
 }
@@ -26,17 +37,602 @@
     column-gap: 8px;
     padding: 8px;
 }
-.header_logo{
+.header_div .header_logo{
     grid-area: 2/1;
+    height: 64px;
 }
-.header_logo_img{
+.header_div .header_logo_img{
     border: 1px solid #e4e4e4ff;
     border-radius: 12px;
+    width: 64px;
+    height: 64px;
 }
-.header_browse{
+.header_div .header_browse{
     grid-area: 2/2;
+    max-width: 100%;
 }
-.browse_text{
+.header_div .browse_text{
     color: #191919ff;
-    font-family: 'regular';
+    font-family: 'bold';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    display: inline-block;
+    width: 100%;
+    letter-spacing: -0.01px;
+}
+.header_div .deliver_fee{
+    color: #606060ff;
+    font-size: 14px;
+    font-family: 'medium';
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing:-0.01px;
+}
+.header_div .header_rating{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header_div .star{
+    margin: 0 0 0 2px;
+}
+.header_div .half_star{
+    margin: 0 2px;
+}
+.header_div .rating{
+    margin-left: 4px;
+    color: #606060ff;
+    font-family: 'medium';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing:-0.01px;
+}
+.header_div .header_open{
+    grid-area: 2/3;
+    align-self: center;
+}
+.header_div .open_link{
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    text-align: center;
+    background-color: #eb1700ff;
+    text-decoration: none;
+}
+.header_div .open_text{
+    padding: 0 12px;
+    color: #ffffff;
+    font-family: 'bold';
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+}
+.doordash_body{
+    display: flex;
+    flex-direction: column;
+}
+.doordash_login{
+    background-image: url(image/hero_desktop.webp);
+    height: 550px;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.doordash_login .doordash_logo{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.doordash_login .white_logo_img{
+    width: 32px;
+    height: 18px;
+}
+.doordash_login .doordash_img{
+    width: 112px;
+    height: 13px;
+    margin-left: 8px;
+}
+.doordash_login .doordash_login_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.doordash_login .doordash_head{
+    margin-bottom: 24px;
+}
+.doordash_login .head_text{
+    color: #ffffff;
+    font-size: 32px;
+    font-family:TTNormsProCond-Blk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+    font-weight: 900;
+    max-width: 350px;
+    letter-spacing:0px ;
+    line-height:28px ;
+    text-align: center;
+}
+.doordash_login .doordash_search_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.doordash_login .doordash_search{
+    border-radius: 12px;
+    display: flex;
+    min-height: 40px;
+}
+.doordash_login .search_container{
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    padding: 6px 16px;
+    background-color: #ffffff;
+}
+.doordash_login .search_logo{
+    margin-right: 12px;
+    height: 24px;
+}
+.doordash_login .search_img{
+    width: 24px;
+    height: 24px;
+}
+.doordash_login .search_text{
+    margin: 0 12px 0 auto;
+}
+.doordash_login .search_text input{
+    font-size: 16px;
+    font-family: 'medium';
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    font-weight: 500;
+    border: none;
+}
+.doordash_login .search_arrow{
+    background: #eb1700ff;
+    color: #ffffff;
+    min-height: 40px;
+    border-radius: 9999px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.doordash_login .arrow_img{
+    width: 24px;
+    height: 24px;
+}
+.doordash_login .login_location{
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+.doordash_login .login_button{
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    justify-content:flex-start;
+    border-radius: 9999px;
+    text-align: center;
+    padding: 0 12px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 1 #19191900, 0 2px 8px 0 #19191933;
+}
+.doordash_login .login_text_button{
+    margin-left: 4px;
+    color: rgb(25, 25, 25);
+    font-family:'bold';
+    font-size: 14px;
+    font-weight:700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+}
+.doordash_login .login_openApp{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 79px;
+    margin-top: 16px;
+    z-index: 1;
+    padding:0 24px 0 16px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.doordash_login .login_link{
+    display: inline-flex;
+    min-height: 40px;
+    width: auto;
+    border-radius: 9999px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.doordash_login .top_login_text{
+    padding:0 12px;
+    color: rgb(25, 25, 25);
+    font-size: 16px;
+    font-family: 'bold';
+    font-weight:700 ;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-align: center;
+}
+.doordash_login .open_app{
+    display: inline-flex;
+    min-height: 40px;
+    width: auto;
+    border-radius: 9999px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #eb1700ff;
+    border: none;
+}
+.doordash_login .open_app_text{
+    padding:0 12px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'bold';
+    font-weight:700 ;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-align: center;
+}
+.browse_faster_main{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.browse_faster_main .browse_faster_div{
+    margin: 20px 20px 0 20px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1ff;
+    padding: 20px;
+    background-color: #f7f7f7ff;
+}
+.browse_faster_main .browse_faster{
+    display: flex;
+}
+.browse_faster_main .doordash_logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1ff;
+    background-color: #ffffff;
+    margin-right: 8px;
+    padding: 8px;
+    display: flex;
+}
+.browse_faster_main .doordash_logo img{
+    width: 40px;
+    height: 40px;
+}
+.browse_faster_main .browse_faster_text{
+    display: inline-block;
+    color: #191919ff;
+    font-size: 18px;
+    font-family: 'bold';
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    width: 100%;
+}
+.browse_faster_main .delivery_fee{
+    margin:2px 0 0 4px;
+    color: #606060ff;
+    font-family: 'medium';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+}
+.browse_faster_main .rate{
+    display: flex;
+    margin-top: 2px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.browse_faster_main .star{
+    margin-left: 2px;
+}
+.browse_faster_main .half_star{
+    margin: 0 2px 0 2px;
+}
+.browse_rating{
+    display: flex;
+    flex-direction: column;
+}
+.browse_faster_main .rating{
+    margin-left: 4px;
+    font-size: 14px;
+    font-family: 'medium';
+    color: #606060ff;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+}
+.browse_faster_main .continue_btn{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    width: 100%;
+    border-radius: 9999px;
+    background-color: #eb1700ff;
+    border: none;
+}
+.browse_faster_main .continue_text{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'bold';
+    font-weight: 700;
+    line-height: 22px;
+}
+.dasher_main{
+    max-width: 768px;
+    margin: 0 auto;
+}
+.dasher_main .dasher_div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 3.5px;
+    padding: 8px;
+}
+.dasher_main .dasher_container{
+    display: flex;
+    min-width: 360px;
+    padding: 16px;
+}
+.dasher_main .dasher_img_div{
+    margin-right: 32px;
+}
+.dasher_main .dasher_img{
+    width: 88px;
+    height: 88px;
+}
+.dasher_main .dasher_content_div{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+.dasher_main .dasher_content{
+    width: 100%;
+}
+.dasher_main .dasher_content h2{
+    color: #191919ff;
+    font-size: 32px;
+    font-family: 'bold';
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.01px;
+}
+.dasher_main .dasher_content h3{
+    color: #191919ff;
+    font-size: 18px;
+    font-family: 'medium';
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+}
+.dasher_main .dasher_link{
+    margin: 12px 0 0 0;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #ffffff;
+}
+.dasher_main .link_text{
+    color: #eb1700ff;
+    font-size: 14px;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+}
+.dasher_main .link_arrow{
+    margin-left: 3px;
+    width: 16px;
+    height: 16px;
+}
+.pictures_container .crave_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90%;
+    padding: 20px;
+    margin-bottom: -300px;
+}
+.pictures_container .crave_img_div{
+    width: 100%;
+}
+.pictures_container .crave_img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.pictures_container .crave_content{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.pictures_container .crave_head{
+    max-width: 90%;
+    margin-top: 20px;
+    color: #191919ff;
+    font-size: 24px;
+    font-family: 'bold';
+    font-weight: 700;
+    line-height: 28px;
+}
+.pictures_container .crave_local{
+    margin-top: 10px;
+    color: #191919ff;
+    font-size: 18px;
+    font-family: 'bold';
+    font-weight: 700;
+    line-height: 22px;
+}
+.pictures_container .crave_paragraph{
+   margin-top: 10px;
+    color: #191919ff;
+    font-size: 14px;
+    font-family: 'medium';
+    font-weight: 500;
+    line-height: 20px; 
+}
+.pictures_container .find_restuarant_main{
+    margin-top: 20px;
+    width: 100%;
+}
+.pictures_container .find_restuarant_div{
+    text-decoration: none;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    align-items: center;
+    border-radius: 9999px;
+    background-color: #eb1700ff;
+}
+.pictures_container .find_restuarant{
+    padding: 0 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'medium';
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+}
+.pictures_container .dashpass_container{
+    background-color: rgb(254, 241, 238);
+    padding: 320px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.get_grocery_main{
+    background: url(image/grocery_desktop.avif) center center / cover;
+    height: 350px;
+}
+.get_grocery{
+    background-color: rgba(30, 30, 30, 0.6);
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.get_grocery_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px;
+}
+.get_grocery_head{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: 'bold';
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    max-width: 90%;
+}
+.grocery_delivery{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: 'bold';
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+}
+.grocery_shop_text{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: 'medium';
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+}
+.grocery_button{
+    display: flex;
+    justify-content: center;
+}
+.convenience_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90%;
+    padding: 20px;
+}
+.scroll_head_div{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(254, 241, 238);
+    padding: 40px 20px 20px;
+    width: 100%;
+}
+.scroll_head{
+    max-width: 300px;
+    text-align: center;
+    color: #191919ff;
+    font-size: 24px;
+    font-family: 'bold';
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+}
+.scroll_content{
+    display: flex;
+    overflow-x:scroll;
+    width: 100%;
+    background-color: rgb(254, 241, 238);
+}
+.scroll_content_div{
+    margin-left: 5%;
+    margin-right: -10%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    align-items: center;
+}
+.color_black{
+    color: #191919ff;
+}
+.text_center{
+    text-align: center;
+}
+.alcohol_text{
+    margin-top: 10px;
+    text-align: center;
+    color: #191919ff;
+    font-size: 12px;
+    font-family: 'bold';
+    font-family: 700;
+    line-height: 18px;
+    letter-spacing: -0.01px;
 }
