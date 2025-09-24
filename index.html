@@ -43,7 +43,10 @@
                     <div class="doordash_search_main">
                         <div class="doordash_search">
                             <div class="search_container">
-                                <div class="search_logo"><img src="image/search_logo.svg" alt="" class="search_img"></div>
+                                <div class="search_logo">
+                                    <img src="image/search_logo.svg" alt="" class="search_img">
+                                    <img src="image/input_location.svg" alt="" class="input_location_img">
+                                </div>
                                 <div class="search_text"><input type="text" placeholder="Enter delivery address"></div>
                                 <div class="search_arrow"><img src="image/arrow_right.svg" alt="" class="arrow_img"></div>
                             </div>
@@ -52,6 +55,8 @@
                             <button title="login" class="login_button">
                                 <img src="image/login_person.svg" alt="" class="login_img">
                                 <span class="login_text_button">Login</span>
+                                <span class="signin_text_button">Sign In</span>
+                                <span class="signin_saved_button">Sign in for saved address</span>
                             </button>
                             <button title="location" class="location_button login_button">
                                 <img src="image/location.svg" alt="" class="location_img">
@@ -60,8 +65,8 @@
                         </div>
                     </div>
                     <div class="login_openApp">
-                        <a href="" class="login_link"><span class="top_login_text">Login</span></a>
-                        <button title="open" class="open_app"><span class="open_app_text">Open App</span></button>
+                        <a href="" class="login_link"><span class="top_login_text">Login</span><span class="top_sign_up">Sign Up</span></a>
+                        <button title="open" class="open_app"><span class="open_app_text">Open App</span><span class="top_sign_in">Sign In</span></button>
                     </div>
                 </div>
             </div>
@@ -131,38 +136,44 @@
                 </div>
             </div>
             <div class="pictures_container">
-                <div class="crave_container">
-                    <div class="crave_img_div">
-                        <img src="image/crave_img.avif" alt="" class="crave_img">
-                    </div>
-                    <div class="crave_content">
-                        <h2 class="crave_head">Everything you crave, delivered.</h2>
-                        <span class="crave_local">Your favorite local restaurants</span>
-                        <span class="crave_paragraph">
-                            Get a slice of pizza or the whole pie delivered, 
-                            or pick up house lo mein from the Chinese takeout spot you've been meaning to try.
-                        </span>
-                        <div class="find_restuarant_main">
-                            <a href="" class="find_restuarant_div">
-                                <span class="find_restuarant">Find restuarant</span>
-                            </a>
+                <div class="crave_main">
+                    <div class="crave_container">
+                        <div class="crave_img_div">
+                            <img src="image/crave_img.avif" alt="" class="crave_img">
+                            <img src="image/download_the_app_desktop_768.avif" alt="" class="crave_img_tab">
+                        </div>
+                        <div class="crave_content">
+                            <h2 class="crave_head">Everything you crave, delivered.</h2>
+                            <span class="crave_local">Your favorite local restaurants</span>
+                            <span class="crave_paragraph">
+                                Get a slice of pizza or the whole pie delivered, 
+                                or pick up house lo mein from the Chinese takeout spot you've been meaning to try.
+                            </span>
+                            <div class="find_restuarant_main">
+                                <a href="" class="find_restuarant_div">
+                                    <span class="find_restuarant">Find restuarants</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="dashpass_container">
-                    <div class="crave_img_div">
-                        <img src="image/dashpass_mobile.avif" alt="" class="crave_img">
-                    </div>
-                    <div class="crave_content">
-                        <h2 class="crave_head">DashPass is delivery for less</h2>
-                        <span class="crave_paragraph">
-                            Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders,
-                             and so much more. Plus, it's free for 30 days.
-                        </span>
-                        <div class="find_restuarant_main">
-                            <a href="" class="find_restuarant_div">
-                                <span class="find_restuarant">Get DashPass</span>
-                            </a>
+                <div class="crave_main crave_bg_color">
+                    <div class="dashpass_container">
+                        <div class="crave_img_div">
+                            <img src="image/dashpass_mobile.avif" alt="" class="crave_img">
+                            <img src="image/dashpass_desktop_768.avif" alt="" class="crave_img_tab">
+                        </div>
+                        <div class="crave_content">
+                            <h2 class="crave_head">DashPass is delivery for less</h2>
+                            <span class="crave_paragraph">
+                                Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders,
+                                and so much more. Plus, it's free for 30 days.
+                            </span>
+                            <div class="find_restuarant_main">
+                                <a href="" class="find_restuarant_div">
+                                    <span class="find_restuarant">Get DashPass</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -183,83 +194,301 @@
                         </div>
                     </div>
                 </div>
-                <div class="convenience_container">
-                    <div class="crave_img_div">
-                        <img src="image/convenience_mobile.avif" alt="" class="crave_img">
-                    </div>
-                    <div class="crave_content">
-                        <h2 class="crave_head">Convenience stores at your doorstep</h2>
-                        <span class="crave_paragraph">
-                            Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.
-                        </span>
-                        <div class="find_restuarant_main">
-                            <a href="" class="find_restuarant_div">
-                                <span class="find_restuarant">Shop Now</span>
-                            </a>
+                <div class="crave_main">
+                    <div class="convenience_container">
+                        <div class="crave_img_div">
+                            <img src="image/convenience_mobile.avif" alt="" class="crave_img">
+                            <img src="image/convenience_desktop_768.avif" alt="" class="crave_img_tab">
+                        </div>
+                        <div class="crave_content">
+                            <h2 class="crave_head">Convenience stores at your doorstep</h2>
+                            <span class="crave_paragraph">
+                                Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.
+                            </span>
+                            <div class="find_restuarant_main">
+                                <a href="" class="find_restuarant_div">
+                                    <span class="find_restuarant">Shop Now</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="scroll_head_div">
                     <span class="scroll_head">Helping you with to-dos and gifting</span>
                 </div>
-                <div class="scroll_content">
-                    <div class="scroll_content_div">
-                        <div class="crave_img_div"><img src="image/beauty_mobile.avif" alt="" class="crave_img"></div>
-                        <div class="crave_content">
-                            <h2 class="get_grocery_head color_black">Beauty essentials from top brands</h2>
-                            <span class="crave_paragraph color_black text_center">Get all your beauty and self-care needs delivered at home or on-the-go</span>
-                            <div class="find_restuarant_main grocery_button">
-                                <a href="" class="find_restuarant_div">
-                                    <span class="find_restuarant">Shop beauty</span>
-                                </a>
+                <div class="overflow_picture">
+                    <div class="scroll_content">
+                        <div class="scroll_content_div">
+                            <div class=" overflow_img_div">
+                                <img src="image/beauty_mobile.avif" alt="" class=" overflow_img">
+                                <img src="image/beauty_desktop_768.avif" alt="" class="overflow_img_tab">
+                            </div>
+                            <div class=" overflow_content">
+                                <h2 class="color_black beauty_head">Beauty essentials from top brands</h2>
+                                <span class="beauty_paragraph color_black text_center">Get all your beauty and self-care needs delivered at home or on-the-go</span>
+                                <div class="find_restuarant_main grocery_button">
+                                    <a href="" class="find_restuarant_div">
+                                        <span class="find_restuarant">Shop beauty</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll_content_div">
+                            <div class="overflow_img_div">
+                                <img src="image/flowers_mobile.avif" alt="" class="overflow_img">
+                                <img src="image/flowers_desktop_768.avif" alt="" class="overflow_img_tab">
+                            </div>
+                            <div class=" overflow_content">
+                                <h2 class=" color_black beauty_head">Flowers for any occasion</h2>
+                                <span class="beauty_paragraph color_black text_center">Shop hand-picked and thoughtfully-arranged blooms from florists near you.</span>
+                                <div class="find_restuarant_main grocery_button">
+                                    <a href="" class="find_restuarant_div">
+                                        <span class="find_restuarant">Send Flowers</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll_content_div">
+                            <div class="overflow_img_div">
+                                <img src="image/alcohol_mobile.avif" alt="" class="overflow_img"></div>
+                                <img src="image/alcohol_desktop_768.avif" alt="" class="overflow_img_tab">
+                            <div class=" overflow_content">
+                                <h2 class=" beauty_head color_black ">Restock the minibar</h2>
+                                <span class="beauty_paragraph color_black text_center">
+                                    Hosting a get-together or need or need a special cocktail ingredient? 
+                                    Get liquor, beer, mixers, champagne and wine delivered fast.*
+                                </span>
+                                <div class="find_restuarant_main grocery_button">
+                                    <a href="" class="find_restuarant_div">
+                                        <span class="find_restuarant">Shop Alcohol</span>
+                                    </a>
+                                </div>
+                                <span class="alcohol_text">*Must be 21+. Enjoy responsibly.</span>
+                            </div>
+                        </div>
+                        <div class="scroll_content_div">
+                            <div class="overflow_img_div">
+                                <img src="image/pet_supplies_mobile.avif" alt="" class="overflow_img">
+                                <img src="image/pet_supplies_desktop_768.avif" alt="" class="overflow_img_tab">
+                            </div>
+                            <div class=" overflow_content">
+                                <h2 class="beauty_head color_black">What your pets need, and want</h2>
+                                <span class="beauty_paragraph color_black text_center">
+                                    Finally, something cat people and dog people agree on — pet supplies delivery. 
+                                    Shop pet food, chew toys, and even costumes.
+                                </span>
+                                <div class="find_restuarant_main grocery_button">
+                                    <a href="" class="find_restuarant_div">
+                                        <span class="find_restuarant">Get Pet Supplies</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="scroll_content_div">
-                        <div class="crave_img_div"><img src="image/flowers_mobile.avif" alt="" class="crave_img"></div>
-                        <div class="crave_content">
-                            <h2 class="get_grocery_head color_black">Flowers for any occasion</h2>
-                            <span class="crave_paragraph color_black text_center">Shop hand-picked and thoughtfully-arranged blooms from florists near you.</span>
-                            <div class="find_restuarant_main grocery_button">
-                                <a href="" class="find_restuarant_div">
-                                    <span class="find_restuarant">Send Flowers</span>
-                                </a>
-                            </div>
+                </div>
+                <div class="scroll_head_div Unlock_opportunity">
+                    <span class="scroll_head">Unlocking opportunity for Dashers and buisnesses</span>
+                </div>
+                <div class="crave_main">
+                    <div class="crave_container">
+                        <div class="crave_img_div">
+                            <img src="image/become_a_dasher_mobile.avif" alt="" class="crave_img">
+                            <img src="image/become_a_dasher_desktop_768.avif" alt="" class="crave_img_tab">
                         </div>
-                    </div>
-                    <div class="scroll_content_div">
-                        <div class="crave_img_div"><img src="image/alcohol_mobile.avif" alt="" class="crave_img"></div>
                         <div class="crave_content">
-                            <h2 class="get_grocery_head color_black">Restock the minibar</h2>
-                            <span class="crave_paragraph color_black text_center">
-                                Hosting a get-together or need or need a special cocktail ingredient? 
-                                Get liquor, beer, mixers, champagne and wine delivered fast.*
+                            <h2 class="crave_head">Sign up to dash and get paid</h2>
+                            <span class="crave_paragraph">
+                                Deliver with the #1 Food and Drink App in the U.S. As a delivery driver, 
+                                you'll make money and work on your schedule. Sign up in minutes.
                             </span>
-                            <div class="find_restuarant_main grocery_button">
+                            <div class="find_restuarant_main">
                                 <a href="" class="find_restuarant_div">
-                                    <span class="find_restuarant">Shop beauty</span>
+                                    <span class="find_restuarant">Become a Dasher</span>
                                 </a>
                             </div>
-                            <span class="alcohol_text">*Must be 21+. Enjoy responsibly.</span>
                         </div>
                     </div>
-                    <div class="scroll_content_div">
-                        <div class="crave_img_div"><img src="image/pet_supplies_mobile.avif" alt="" class="crave_img"></div>
+                </div>
+                <div class="crave_main crave_bg_color">
+                    <div class="dashpass_container">
+                        <div class="crave_img_div">
+                            <img src="image/work_with_doordash_mobile.avif" alt="" class="crave_img">
+                            <img src="image/work_with_doordash_desktop_768.avif" alt="" class="crave_img_tab">
+                        </div>
                         <div class="crave_content">
-                            <h2 class="get_grocery_head color_black">What your pets need, and want</h2>
-                            <span class="crave_paragraph color_black text_center">
-                                Finally, something cat people and dog people agree on — pet supplies delivery. 
-                                Shop pet food, chew toys, and even costumes.
+                            <h2 class="crave_head">Grow your business with DoorDash</h2>
+                            <span class="crave_paragraph">
+                                Businesses large and small partner with DoorDash to reach new customers, 
+                                increase order volume, and drive more sales.
                             </span>
-                            <div class="find_restuarant_main grocery_button">
+                            <div class="find_restuarant_main">
                                 <a href="" class="find_restuarant_div">
-                                    <span class="find_restuarant">Shop beauty</span>
+                                    <span class="find_restuarant">Become a Partner</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="tab_main">
+                <div class="tab_navigation">
+                    <h2 class="tab_navigation_head">Get more from your neighborhood</h2>
+                    <div class="tab_navigation_content">
+                        <div class="tab_content_head">
+                            <div class="top_cities"><span class="top_cities_text">Top Cities</span></div>
+                            <div class="top_cuisines top_cities"><span class="top_cuisines_text top_cities_text">Top Cuisines</span></div>
+                            <div class="top_chains top_cities top_cuisines"><span class="top_chains_text top_cities_text top_cuisines_text">Top Chains</span></div>
+                        </div>
+                        <div class="top_content">
+                            <div class="top_content_list">
+                                <a href="" class="content_list">New York</a>
+                                <a href="" class="content_list">Los Angeles</a>
+                                <a href="" class="content_list">Toronto</a>
+                                <a href="" class="content_list">Chicago</a>
+                                <a href="" class="content_list">Houston</a>
+                                <a href="" class="content_list">Brooklyn</a>
+                                <a href="" class="content_list">San Diego</a>
+                                <a href="" class="content_list">Las Vegas</a>
+                                <a href="" class="content_list">San Franscisco</a>
+                                <a href="" class="content_list">Seattle</a>
+                                <a href="" class="content_list">Atlanta</a>
+                                <a href="" class="content_list">Queens</a>
+                                <a href="" class="content_list">Vancouver, BC</a>
+                                <a href="" class="content_list">Miami</a>
+                                <a href="" class="content_list">San Antonio</a>
+                            </div>
+                            <div class="top_seemore">
+                                <span class="seemore_text">See more</span>
+                                <button title="dropdown" class="seemore_button"><img src="image/seemore_drop.svg" alt="" class="seemore_img"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer_main">
+                    <div class="Popular_main">
+                        <h2 class="popular_head">Popular Categories</h2>
+                        <div class="popular_categories">
+                            <div class="popular_content">
+                                <a href="" class="popular_text">Alcohol Australia</a>
+                                <a href="" class="popular_text">Alcohol Delivery Australia</a>
+                                <a href="" class="popular_text">Aldi Australia</a>
+                                <a href="" class="popular_text">Back To School Delivery</a>
+                                <a href="" class="popular_text">Battle Of The Brands</a>
+                                <a href="" class="popular_text">Beauty Stores</a>
+                                <a href="" class="popular_text">Beauty Supply</a>
+                                <a href="" class="popular_text">Catering Near Me</a>
+                                <a href="" class="popular_text">Chips Ahoy Big Cookie</a>
+                                <a href="" class="popular_text">Coca Cola</a>
+                            </div>
+                            <div class="popular_content">
+                                <a href="" class="popular_text">Convenience Stores Canada</a>
+                                <a href="" class="popular_text">Dashmart Near Me</a>
+                                <a href="" class="popular_text">Deck The Doorstep</a>
+                                <a href="" class="popular_text">Diageo Holiday</a>
+                                <a href="" class="popular_text">Drugstores Canada</a>
+                                <a href="" class="popular_text">Flower Delivery</a>
+                                <a href="" class="popular_text">Grocery Delivery Canada</a>
+                                <a href="" class="popular_text">Grocery Retail Convenience</a>
+                                <a href="" class="popular_text">Haleon Well Within Reach</a>
+                                <a href="" class="popular_text">Halloween</a>
+                            </div>
+                            <div class="popular_content">
+                                <a href="" class="popular_text">Holiday Hosting</a>
+                                <a href="" class="popular_text">Hsa Bank</a>
+                                <a href="" class="popular_text">Hsa Fsa Store</a>
+                                <a href="" class="popular_text">Large Group Orders</a>
+                                <a href="" class="popular_text">Local Eats Deserve Pepsi</a>
+                                <a href="" class="popular_text">Make It Date Night</a>
+                                <a href="" class="popular_text">Medicine Delivery</a>
+                                <a href="" class="popular_text">Mothers Day</a>
+                                <a href="" class="popular_text">Pepsi</a>
+                                <a href="" class="popular_text">Pet Store Near Me</a>
+                            </div>
+                            <div class="popular_content">
+                                <a href="" class="popular_text">Pickleball</a>
+                                <a href="" class="popular_text">Play For An Ultra</a>
+                                <a href="" class="popular_text">Procter Gamble</a>
+                                <a href="" class="popular_text">Retail Stores Near Me</a>
+                                <a href="" class="popular_text">Seasonal Holidays</a>
+                                <a href="" class="popular_text">Snap Ebt</a>
+                                <a href="" class="popular_text">Thanksgiving</a>
+                                <a href="" class="popular_text">Valentines Day</a>
+                                <a href="" class="popular_text">Winter Holidays</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="know_app">
+                        <div class="app_available">
+                            <a href="" class="appstore"><img src="image/appstore.svg" alt="" class="appstore_img"></a>
+                            <a href="" class="playstore appstore"><img src="image/googlePlay.svg" alt="" class="playstore_img appstore_img"></a>
+                        </div>
+                        <div class="know_us">
+                            <div class="know_us_div">
+                                <h2 class="know_us_head">Get to Know Us</h2>
+                                <a href="" class="know_us_text">About Us</a>
+                                <a href="" class="know_us_text">Careers</a>
+                                <a href="" class="know_us_text">Investors</a>
+                                <a href="" class="know_us_text">Company Blog</a>
+                                <a href="" class="know_us_text">Engineering Blog</a>
+                                <a href="" class="know_us_text">Merchant Blog</a>
+                                <a href="" class="know_us_text">Gift Cards</a>
+                                <a href="" class="know_us_text">Promotions</a>
+                                <a href="" class="know_us_text">Dasher Central</a>
+                                <a href="" class="know_us_text">LinkedIn</a>
+                                <a href="" class="know_us_text">Glassdoor</a>
+                                <a href="" class="know_us_text">Accessibility</a>
+                                <a href="" class="know_us_text">Newsroom</a>
+                            </div>
+                            <div class="know_us_div">
+                                <h2 class="know_us_head">Let Us Help You</h2>
+                                <a href="" class="know_us_text">Account Details</a>
+                                <a href="" class="know_us_text">Order History</a>
+                                <a href="" class="know_us_text">Help</a>
+                            </div>
+                            <div class="know_us_div">
+                                <h2 class="know_us_head">Doing Business</h2>
+                                <a href="" class="know_us_text">Become a Dasher</a>
+                                <a href="" class="know_us_text">DoorDash Merchant</a>
+                                <a href="" class="know_us_text">Get Dashers for Deliveries</a>
+                                <a href="" class="know_us_text">Get DoorDash for Business</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_end">
+                        <div class="social_media">
+                            <a href="" class="facebook"><img src="image/facebook (1).svg" alt="" class="facebook_logo"></a>
+                            <a href="" class="twitter facebook"><img src="image/twitter_doordash.svg" alt="" class="twitter_logo facebook_logo"></a>
+                            <a href="" class="instagram facebook twitter"><img src="image/instagram_doordash.svg" alt="" class="instagram_logo facebook_logo"></a>
+                        </div>
+                        <div class="language_select">
+                            <div class="language_select_div">
+                                <div class="world"><img src="image/earth.svg" alt="" class="world_logo"></div>
+                                <div class="select_div">
+                                    <select name="" id="" title="select" class="select">
+                                        <option value="">English (US)</option>
+                                        <option value="">Español (US)</option>
+                                        <option value="">English (CA)</option>
+                                        <option value="">Français (CA)</option>
+                                        <option value="">English (AU)</option>
+                                        <option value="">English (NZ)</option>
+                                    </select>
+                                    <div class="dropdown"><img src="image/dropdown_doordash.svg" alt="" class="dropdown_img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright_issue">
+                            <a href="" class="copyright_doordash"><img src="image/white_logo.svg" alt="" class="copyright_doordash_logo"></a>
+                            <a href="" class="copyright_link">Terms of Service</a>
+                            <a href="" class="copyright_link">Privacy</a>
+                            <a href="" class="copyright_link">Delivery Locations</a>
+                            <a href="" class="copyright_link">Do Not Sell or Share My Personal Information</a>
+                            <a href="" class="copyright_link">© 2025 DoorDash</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
    </main>
 </body>
