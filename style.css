@@ -456,10 +456,10 @@
 .dasher_main .link_text{
     color: #eb1700ff;
     font-size: 14px;
-    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 700;
+    font-family:'medium';
+    font-weight: 600;
     line-height: 20px;
-    letter-spacing: -0.01px;
+    letter-spacing: 0.31px;
 }
 .dasher_main .link_arrow{
     margin-left: 3px;
@@ -1312,6 +1312,9 @@
 @media screen and (min-width:1024px){
     .pictures_container .overflow_img_tab{
         height: 472px;
+    }
+    .pictures_container .crave_paragraph{
+        margin-top: 20px;
     }
     .footer .know_app {
         flex-direction: row-reverse;
